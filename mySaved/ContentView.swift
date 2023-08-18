@@ -24,7 +24,7 @@ struct ContentView: View {
                     Image(systemName: "bookmark")
                         .resizable()
                         .padding(.all, 15.0) .frame(width: /*@START_MENU_TOKEN@*/53.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/54.0/*@END_MENU_TOKEN@*/)
-                    Text("📆 NOV 14 REMA AT THE O2")
+                    Text("🗓️ NOV 14 REMA AT THE O2")
                         
                 
                     Spacer()
@@ -51,15 +51,18 @@ struct ContentView: View {
                 }
                 .padding(.leading)
                    
-                }
-               
-               
+                Image ("logo")
+                    .resizable(capInsets: EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0), resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fit)
+                    .padding(.all, 60.0)}
+                
             }
             
-            .padding()
+//        .padding(.vertical)
+          .padding(.horizontal)
         }
-        //.padding(.horizontal)
-    }
+       
+}
     
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
